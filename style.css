@@ -1,0 +1,64 @@
+body{
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+
+header{
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  font-size: larger;
+}
+
+#startBtn{
+  font-size: large;
+  background-color: greenyellow;
+  border-radius: 20px;
+  cursor: pointer;
+  height: fit-content;
+  align-self: center;
+  padding: 10px;
+}
+
+#startBtn:hover{
+  background-color: rgb(161, 161, 161);
+}
+
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
+
+.miniGrid div, .grid div {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+
+.miniGrid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: yellow;
+}
