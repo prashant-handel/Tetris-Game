@@ -99,21 +99,23 @@ function control(e) {
 document.addEventListener("keydown", control);
 
 // Image Controls for making it responsive
-leftImgEl.addEventListener("click",()=>{
+if (timerId && isGameOver == false) {
+leftImgEl.addEventListener("focus",()=>{
   moveLeft();
 })
 
-rotateImgEl.addEventListener("click",()=>{
+rotateImgEl.addEventListener("focus",()=>{
   rotate();
 })
 
-rightImgEl.addEventListener("click",()=>{
+rightImgEl.addEventListener("focus",()=>{
   moveRight();
 })
 
-downImgEl.addEventListener("click",()=>{
+downImgEl.addEventListener("focus",()=>{
   moveDown();
 })
+}
 
 //move down function
 function moveDown() {
