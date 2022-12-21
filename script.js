@@ -99,7 +99,6 @@ function control(e) {
 document.addEventListener("keydown", control);
 
 // Image Controls for making it responsive
-if (timerId && isGameOver == false) {
 leftImgEl.addEventListener("click",()=>{
   moveLeft();
 })
@@ -115,7 +114,6 @@ rightImgEl.addEventListener("click",()=>{
 downImgEl.addEventListener("click",()=>{
   moveDown();
 })
-}
 
 //move down function
 function moveDown() {
