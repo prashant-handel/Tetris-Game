@@ -100,19 +100,19 @@ document.addEventListener("keydown", control);
 
 // Image Controls for making it responsive
 if (timerId && isGameOver == false) {
-leftImgEl.addEventListener("mousedown",()=>{
+leftImgEl.addEventListener("click",()=>{
   moveLeft();
 })
 
-rotateImgEl.addEventListener("mousedown",()=>{
+rotateImgEl.addEventListener("click",()=>{
   rotate();
 })
 
-rightImgEl.addEventListener("mousedown",()=>{
+rightImgEl.addEventListener("click",()=>{
   moveRight();
 })
 
-downImgEl.addEventListener("mousedown",()=>{
+downImgEl.addEventListener("click",()=>{
   moveDown();
 })
 }
