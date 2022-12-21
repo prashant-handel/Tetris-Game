@@ -100,19 +100,19 @@ document.addEventListener("keydown", control);
 
 // Image Controls for making it responsive
 if (timerId && isGameOver == false) {
-leftImgEl.addEventListener("focus",()=>{
+leftImgEl.addEventListener("focusin",()=>{
   moveLeft();
 })
 
-rotateImgEl.addEventListener("focus",()=>{
+rotateImgEl.addEventListener("focusin",()=>{
   rotate();
 })
 
-rightImgEl.addEventListener("focus",()=>{
+rightImgEl.addEventListener("focusin",()=>{
   moveRight();
 })
 
-downImgEl.addEventListener("focus",()=>{
+downImgEl.addEventListener("focusin",()=>{
   moveDown();
 })
 }
