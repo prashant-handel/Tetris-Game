@@ -233,7 +233,6 @@ const upNextTetrominoes = [
 
 //display the shape in the miniGrid display
 function displayShape() {
-  //remove any trace of a tetromino form the entire grid
   displaySquares.forEach((square) => {
     square.classList.remove("tetromino");
     square.style.backgroundColor = "";
@@ -245,7 +244,7 @@ function displayShape() {
   });
 }
 
-//add functionality to the startBtn
+//startBtn functioning
 startBtnEl.addEventListener("click", () => {
   if (timerId) {
     clearInterval(timerId);
